@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('Ping') {
       steps {
-        sh 'ansible all -m ping'
+        sh '''ansible all -m ping -f 5
+'''
       }
     }
 
