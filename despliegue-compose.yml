@@ -1,0 +1,5 @@
+- hosts: all
+  become: yes
+  tasks:
+  - name: Copiar docker-compose
+    copy: src=/home/jlpm/Scripts/docker-compose.yml dest=/tmp/docker-compose.yml
